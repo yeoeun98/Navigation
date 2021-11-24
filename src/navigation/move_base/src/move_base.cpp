@@ -107,6 +107,7 @@ namespace move_base {
     //they won't get any useful information back about its status, but this is useful for tools
     //like nav_view and rviz
     ros::NodeHandle simple_nh("move_base_simple");
+    // ros::NodeHandle simple_nh;
     goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, boost::bind(&MoveBase::goalCB, this, _1));
 
     //we'll assume the radius of the robot to be consistent with what's specified for the costmaps

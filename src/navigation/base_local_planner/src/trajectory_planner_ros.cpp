@@ -119,8 +119,8 @@ namespace base_local_planner {
       robot_base_frame_ = costmap_ros_->getBaseFrameID();
       private_nh.param("prune_plan", prune_plan_, true);
 
-      private_nh.param("yaw_goal_tolerance", yaw_goal_tolerance_, 0.05);
-      private_nh.param("xy_goal_tolerance", xy_goal_tolerance_, 0.10);
+      private_nh.param("yaw_goal_tolerance", yaw_goal_tolerance_, 0.3);
+      private_nh.param("xy_goal_tolerance", xy_goal_tolerance_, 0.30);
       private_nh.param("acc_lim_x", acc_lim_x_, 2.5);
       private_nh.param("acc_lim_y", acc_lim_y_, 2.5);
       private_nh.param("acc_lim_theta", acc_lim_theta_, 3.2);
