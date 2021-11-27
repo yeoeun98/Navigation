@@ -62,6 +62,7 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
+
     <model name='map'>
       <pose frame=''>2.69863 0.658974 0 0 -0 0</pose>
       <link name='Wall_0'>

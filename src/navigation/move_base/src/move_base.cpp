@@ -893,19 +893,19 @@ namespace move_base {
         //check to see if we've reached our goal
         if(tc_->isGoalReached()){
           ROS_DEBUG_NAMED("move_base","Goal reached!");
-          if(abs(action_goal.goal.target_pose.pose.position.x-6.82)>0.1){
-            action_goal.header.stamp = ros::Time::now();
-            action_goal.goal.target_pose.pose.position.x = 6.83;
-            action_goal.goal.target_pose.pose.position.y = 0.81;
-            action_goal.goal.target_pose.pose.position.z = 0.0;
-            action_goal.goal.target_pose.pose.orientation.x = 0.0;
-            action_goal.goal.target_pose.pose.orientation.y = 0.0;
-            action_goal.goal.target_pose.pose.orientation.z = -0.0;
-            action_goal.goal.target_pose.pose.orientation.w = 1.0;
-
-            action_goal_pub_.publish(action_goal);
+          // if(abs(action_goal.goal.target_pose.pose.position.x-6.82)>0.1){
+            // action_goal.header.stamp = ros::Time::now();
+            // action_goal.goal.target_pose.pose.position.x = 6.83;
+            // action_goal.goal.target_pose.pose.position.y = 0.81;
+            // action_goal.goal.target_pose.pose.position.z = 0.0;
+            // action_goal.goal.target_pose.pose.orientation.x = 0.0;
+            // action_goal.goal.target_pose.pose.orientation.y = 0.0;
+            // action_goal.goal.target_pose.pose.orientation.z = -0.0;
+            // action_goal.goal.target_pose.pose.orientation.w = 1.0;
+// 
+            // action_goal_pub_.publish(action_goal);
             
-          }
+          // }
           ROS_INFO("yeoeun!!!!!!");
           resetState();
 
