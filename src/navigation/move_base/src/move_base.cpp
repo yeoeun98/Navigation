@@ -673,6 +673,8 @@ namespace move_base {
     lock.unlock();
 
     current_goal_pub_.publish(goal);
+    
+    ROS_INFO("!!!!!x:%f, y:%f, W: %f, z:%f!!", goal.pose.position.x, goal.pose.position.y, goal.pose.orientation.z, goal.pose.orientation.w);
 
     ros::Rate r(controller_frequency_);
     if(shutdown_costmaps_){
