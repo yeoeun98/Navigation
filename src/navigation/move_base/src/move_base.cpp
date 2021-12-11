@@ -908,16 +908,18 @@ namespace move_base {
             // action_goal_pub_.publish(action_goal);
             
           // }
+
           ROS_INFO("yeoeun!!!!!!");
           resetState();
-
           //disable the planner thread
           boost::unique_lock<boost::recursive_mutex> lock(planner_mutex_);
           runPlanner_ = false;
           lock.unlock();
 
           as_->setSucceeded(move_base_msgs::MoveBaseResult(), "Goal reached.");
+          
           return true;
+          
         }
 
         //check for an oscillation condition
